@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#bf512e</color>
+    <color name="colorPrimaryDark">#bf512e</color>
+    <color name="colorAccent">#bf512e</color>
+    <color name="colorApptitle">#bf512e</color>
+
+    <color name="background">#fafafa</color>
+    <color name="normalWite">#ffffff</color>
+    <color name="normalBlack">#999999</color>
+    <color name="normalDark">#cccccc</color>
+    <color name="longinHint">#a0a0a0</color>
+    <color name="editext_bg">#fea621</color>
+    <color name="mine_inf">#a1a1a1</color>
+    <color name="mine_interval">#f2f2f2</color>
+    <color name="helper_bg">#c65f34</color>
+    <color name="dialog_bg">#00000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_cc3333">#cc3333</color>
+    <color name="color_ff6633">#ff6633</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_eeeeee">#eeeeee</color>
+
+
+</resources>

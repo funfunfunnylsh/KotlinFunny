@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.zdtc.ue.school.yw"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 6
+        versionName "V2.5"
+        testInstrumentationRunner "android.support.testssss.runner.AndroidJUnitRunner"
+
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'x86'
+            // 还可以添加 , 'armeabi-v7a', 'arm64-v8a'  'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                XG_ACCESS_ID : "2100293101",
+                XG_ACCESS_KEY: "A6467BAFMP2N",
+        ]
+
+        multiDexEnabled true
+
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    androidTestImplementation 'junit:junit:4.12'
+
+    implementation project(':baselibs')
+
+
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">baselibrary</string>
+
+
+    <string name="btn_sure">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="loading">请稍后...</string>
+</resources>
